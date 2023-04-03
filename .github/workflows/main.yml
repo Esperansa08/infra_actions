@@ -39,7 +39,7 @@ jobs:
     steps:
     #- uses: actions/checkout@v2
     - name: Build docker
-    - run: |
+      run: |
         docker build -t infra_actions:v.1 .
         docker run -p 5000:5000 infra_actions:v.1
 
