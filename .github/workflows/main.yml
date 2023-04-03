@@ -40,9 +40,11 @@ jobs:
     #- uses: actions/checkout@v2
     - name: Build docker
       run: |
+        ls
         cd ..
-        docker build -t infra_actions:v.1 .
-        docker run -p 5000:5000 infra_actions:v.1
+        ls
+      # docker build -t infra_actions:v.1 .
+        # docker run -p 5000:5000 infra_actions:v.1
 
   # Деплой приложения на удалённый сервер
   # deploy:
